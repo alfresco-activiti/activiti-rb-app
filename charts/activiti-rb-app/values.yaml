@@ -17,7 +17,7 @@ global:
       type: http
       port: 80
 
-REPLACE_ME_APP_NAME-postgres:
+activiti-rb-app-postgres:
   enabled: true
   postgresqlPassword: activiti
 
@@ -31,7 +31,7 @@ db:
   ddlAuto:
 
 postgres:
-  name: REPLACE_ME_APP_NAME-postgres
+  name: activiti-rb-app-postgres
   port: 5432
   username: postgres
   password:
@@ -61,7 +61,7 @@ image:
   tag: dev
   pullPolicy: IfNotPresent
 service:
-  name: REPLACE_ME_APP_NAME
+  name: activiti-rb-app
   type: ClusterIP
   externalPort: 80
   internalPort: 8080
@@ -90,7 +90,7 @@ ingress:
   ## Set to true to enable ingress record generation
   enabled: false
 
-  path: /REPLACE_ME_APP_NAME
+  path: /activiti-rb-app
 
   ## Set this to override global.gateway.host name
   hostName: 

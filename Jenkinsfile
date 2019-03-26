@@ -3,8 +3,8 @@ pipeline {
     label "jenkins-maven-java11"
   }
   environment {
-    ORG = 'REPLACE_ME_ORG'
-    APP_NAME = 'REPLACE_ME_APP_NAME'
+    ORG = 'alfresco-activiti'
+    APP_NAME = 'activiti-rb-app'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
   }
   stages {
@@ -61,7 +61,7 @@ pipeline {
       }
       steps {
         container('maven') {
-          dir('charts/REPLACE_ME_APP_NAME') {
+          dir('charts/activiti-rb-app') {
             sh "jx step changelog --version v\$(cat ../../VERSION)"
 
             // release the helm chart

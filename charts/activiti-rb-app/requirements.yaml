@@ -1,9 +1,9 @@
 dependencies:
-- alias: REPLACE_ME_APP_NAME-postgres
+- alias: activiti-rb-app-postgres
   name: postgresql
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 3.11.3
-  condition: REPLACE_ME_APP_NAME-postgres.enabled
+  condition: activiti-rb-app-postgres.enabled
 - name: common
   repository: https://activiti.github.io/activiti-cloud-charts/
   version: 1.1.2  

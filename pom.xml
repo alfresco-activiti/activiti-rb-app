@@ -9,12 +9,12 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.activiti.cloud</groupId>
-	<artifactId>REPLACE_ME_APP_NAME</artifactId>
+	<artifactId>activiti-rb-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>REPLACE_ME_APP_NAME</name>
-	<description>Activiti Cloud :: Runtime Bundle (REPLACE_ME_APP_NAME)</description>
+	<name>activiti-rb-app</name>
+	<description>Activiti Cloud :: Runtime Bundle (activiti-rb-app)</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
